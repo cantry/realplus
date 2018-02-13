@@ -1,0 +1,22 @@
+<!Doctype html>
+
+<html>
+  <head>
+    <head>
+      <script src="https://aframe.io/releases/0.7.0/aframe.min.js"></script>
+    </head>
+  </head>
+  <body>
+    {% if shapes %}
+    <a-scene>
+      {% for shape in shapes %}
+        <{{shape.name}}
+        {{shape.attributes}}>
+      {% endfor %}
+    </a-scene>
+      {% else %}
+        <p>No Shapes are available.</p>
+      {% endif %}
+</body>
+  </body>
+</html>
