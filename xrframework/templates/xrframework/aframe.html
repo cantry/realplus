@@ -10,8 +10,7 @@
     {% if shapes %}
     <a-scene>
       {% for shape in shapes %}
-        <{{shape.name}}
-        {{shape.attributes}}>
+        <{{shape.name}} {{shape.Attributes}}></{{shape.name}}>
       {% endfor %}
     </a-scene>
       {% else %}

@@ -1,6 +1,6 @@
 from django.contrib import admin
-from .models import Shapes, Scene
+from .models import Shape, Scene
 
-admin.site.register(Shapes)
+admin.site.register(Shape)
 admin.site.register(Scene)
 # Register your models here.
