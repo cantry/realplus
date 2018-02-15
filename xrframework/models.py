@@ -11,12 +11,8 @@ class Shape(models.Model):
     @property
     def Attributes(self):
         attrDict = json.loads(self.attributes)
-        params = []
-        for name, val in attrDict.items():
-            str1 = name + "=" + val
-            params.append(str1)
-        print(" ".join(params))
-        return " ".join(params)
+        print(attrDict)
+        return attrDict;
 
     def __str__(self):
         return self.name
